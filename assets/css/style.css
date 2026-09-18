@@ -1,0 +1,572 @@
+/* =========================================================
+   HABIBI - MAIN STYLE
+   فروشگاه اینترنتی خشکبار حبیبی
+========================================================= */
+
+
+/* =========================================================
+   FONT
+========================================================= */
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("../fonts/Vazirmatn/Vazirmatn-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("../fonts/Vazirmatn/Vazirmatn-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("../fonts/Vazirmatn/Vazirmatn-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --habibi-red: #9E2636;
+    --habibi-red-dark: #7F1F2C;
+    --habibi-red-light: #B83246;
+
+    --habibi-cream: #FFF8F0;
+    --habibi-cream-dark: #F5E9DC;
+
+    --habibi-gold: #D6A84F;
+    --habibi-gold-light: #E8C878;
+
+    --habibi-brown: #4A2C2A;
+
+    --habibi-text: #3D2927;
+    --habibi-muted: #806A67;
+
+    --habibi-white: #FFFFFF;
+
+    --habibi-border: rgba(74, 44, 42, 0.10);
+
+    --habibi-shadow:
+        0 8px 30px rgba(74, 44, 42, 0.08);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    direction: rtl;
+
+    background: var(--habibi-cream);
+
+    color: var(--habibi-text);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.8;
+
+}
+
+
+button,
+input,
+textarea,
+select {
+
+    font-family: "Vazirmatn", sans-serif;
+
+}
+
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+
+a {
+
+    color: inherit;
+
+}
+
+
+button {
+
+    font-family: inherit;
+
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+
+    background: var(--habibi-red);
+
+    color: var(--habibi-white);
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: var(--habibi-cream);
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--habibi-red);
+
+    border-radius: 20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--habibi-red-dark);
+
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.container {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.habibi-section {
+
+    padding: 70px 0;
+
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.habibi-section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.habibi-section-title .eyebrow {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--habibi-gold);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.habibi-section-title h2 {
+
+    margin: 0;
+
+    color: var(--habibi-red);
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+}
+
+
+.habibi-section-title p {
+
+    max-width: 600px;
+
+    margin: 10px auto 0;
+
+    color: var(--habibi-muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.habibi-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 46px;
+
+    padding: 9px24px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--habibi-red);
+
+    color: var(--habibi-white);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.habibi-btn:hover {
+
+    background: var(--habibi-red-dark);
+
+    color: var(--habibi-white);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(158, 38, 54, 0.20);
+
+}
+
+
+.habibi-btn-gold {
+
+    background: var(--habibi-gold);
+
+}
+
+
+.habibi-btn-gold:hover {
+
+    background: #BE913D;
+
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.habibi-btn-outline {
+
+    background: transparent;
+
+    color: var(--habibi-red);
+
+    border:
+        1px solid var(--habibi-red);
+
+}
+
+
+.habibi-btn-outline:hover {
+
+    background: var(--habibi-red);
+
+    color: var(--habibi-white);
+
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+.habibi-form-control {
+
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 8px 14px;
+
+    border:
+        1px solid var(--habibi-border);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: var(--habibi-white);
+
+    color: var(--habibi-text);
+
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.habibi-form-control:focus {
+
+    border-color: var(--habibi-red);
+
+    box-shadow:
+        0 0 0 3px rgba(158, 38, 54, 0.08);
+
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.habibi-card {
+
+    background: var(--habibi-white);
+
+    border:
+        1px solid var(--habibi-border);
+
+    border-radius: 18px;
+
+    box-shadow:
+        var(--habibi-shadow);
+
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.habibi-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 25px;
+
+    padding: 3px 10px;
+
+    border-radius: 30px;
+
+    background: rgba(214, 168, 79, 0.14);
+
+    color: var(--habibi-brown);
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.habibi-price {
+
+    color: var(--habibi-red);
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+
+.habibi-price small {
+
+    color: var(--habibi-muted);
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   UTILITY
+========================================================= */
+
+.text-habibi-red {
+
+    color: var(--habibi-red) !important;
+
+}
+
+
+.text-habibi-gold {
+
+    color: var(--habibi-gold) !important;
+
+}
+
+
+.bg-habibi-cream {
+
+    background: var(--habibi-cream) !important;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .habibi-section {
+
+        padding: 50px 0;
+
+    }
+
+
+    .habibi-section-title {
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .habibi-section-title h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .habibi-section-title p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+    body {
+
+        font-size: 13px;
+
+    }
+
+
+    .habibi-section {
+
+        padding: 40px 0;
+
+    }
+
+
+    .habibi-section-title h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .habibi-btn {
+
+        min-height: 43px;
+
+        padding:
+            8px 18px;
+
+        font-size: 12px;
+
+    }
+
+}

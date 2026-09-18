@@ -1,0 +1,1069 @@
+/* =========================================================
+   HABIBI - HEADER
+   رنگ‌بندی: جگری + کرم + طلایی
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --habibi-red: #9E2636;
+    --habibi-red-dark: #7F1F2C;
+    --habibi-red-light: #B83246;
+
+    --habibi-cream: #FFF8F0;
+    --habibi-cream-dark: #F5E9DC;
+
+    --habibi-gold: #D6A84F;
+    --habibi-gold-light: #E8C878;
+
+    --habibi-brown: #4A2C2A;
+
+    --habibi-white: #FFFFFF;
+
+    --habibi-shadow:
+        0 4px 20px rgba(74, 44, 42, 0.08);
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.habibi-header {
+
+    position: relative;
+
+    width: 100%;
+
+    background: var(--habibi-white);
+
+    border-bottom:
+        1px solid rgba(158, 38, 54, 0.10);
+
+    box-shadow:
+        var(--habibi-shadow);
+
+    z-index: 1000;
+
+}
+
+
+/* =========================================================
+   HEADER INNER
+========================================================= */
+
+.habibi-header-inner {
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.habibi-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+
+}
+
+
+.habibi-logo img {
+
+    width: auto;
+
+    max-width: 145px;
+
+    max-height: 62px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.habibi-logo:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.habibi-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex: 1;
+
+}
+
+
+.habibi-nav a {
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 29px 2px;
+
+    color: var(--habibi-brown);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease;
+
+}
+
+
+.habibi-nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 18px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--habibi-gold);
+
+    border-radius: 10px;
+
+    transition:
+        width 0.25s ease;
+
+}
+
+
+.habibi-nav a:hover {
+
+    color: var(--habibi-red);
+
+}
+
+
+.habibi-nav a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.habibi-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+
+}
+
+
+.habibi-action {
+
+    position: relative;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--habibi-brown);
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.habibi-action:hover {
+
+    color: var(--habibi-white);
+
+    background: var(--habibi-red);
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   CART BADGE
+========================================================= */
+
+.habibi-cart-badge {
+
+    position: absolute;
+
+    top: -2px;
+
+    left: -2px;
+
+    min-width: 19px;
+
+    height: 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 5px;
+
+    border-radius: 50px;
+
+    background: var(--habibi-gold);
+
+    color: var(--habibi-white);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    border: 2px solid var(--habibi-white);
+
+}
+
+
+/* =========================================================
+   USER DROPDOWN
+========================================================= */
+
+.habibi-user-dropdown {
+
+    position: relative;
+
+}
+
+
+.habibi-user-button {
+
+    width: auto;
+
+    min-width: 42px;
+
+    padding: 0 10px;
+
+    border-radius: 25px;
+
+    gap: 6px;
+
+}
+
+
+.habibi-user-button .user-name {
+
+    max-width: 100px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+
+.user-chevron {
+
+    font-size: 11px;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.habibi-user-dropdown.open
+.user-chevron {
+
+    transform: rotate(180deg);
+
+}
+
+
+/* =========================================================
+   USER MENU
+========================================================= */
+
+.habibi-user-menu {
+
+    position: absolute;
+
+    top: calc(100% + 12px);
+
+    left: 0;
+
+    width: 235px;
+
+    padding: 10px;
+
+    background: var(--habibi-white);
+
+    border:
+        1px solid rgba(158, 38, 54, 0.10);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px rgba(74, 44, 42, 0.14);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(-8px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.habibi-user-dropdown.open
+.habibi-user-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   USER GREETING
+========================================================= */
+
+.user-menu-greeting {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    padding: 12px;
+
+    margin-bottom: 5px;
+
+    background: var(--habibi-cream);
+
+    border-radius: 11px;
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 12px;
+
+    color: var(--habibi-brown);
+
+}
+
+
+.user-menu-greeting strong {
+
+    color: var(--habibi-red);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   USER MENU ITEMS
+========================================================= */
+
+.user-menu-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 42px;
+
+    padding: 8px 10px;
+
+    border-radius: 9px;
+
+    color: var(--habibi-brown);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.user-menu-item i {
+
+    width: 20px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+}
+
+
+.user-menu-item:hover {
+
+    color: var(--habibi-red);
+
+    background: var(--habibi-cream);
+
+}
+
+
+.user-menu-logout:hover {
+
+    color: #B42318;
+
+    background: #FFF0F0;
+
+}
+
+
+.user-menu-divider {
+
+    height: 1px;
+
+    margin: 7px 5px;
+
+    background:
+        rgba(74, 44, 42, 0.08);
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.habibi-search {
+
+    display: none;
+
+    padding: 12px 0 16px;
+
+    background: var(--habibi-cream);
+
+    border-top:
+        1px solid rgba(158, 38, 54, 0.06);
+
+}
+
+
+.habibi-search.show {
+
+    display: block;
+
+}
+
+
+.habibi-search-form {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.habibi-search-form input {
+
+    width: 100%;
+
+    height: 46px;
+
+    padding:
+        0 18px 0 52px;
+
+    border:
+        1px solid rgba(158, 38, 54, 0.15);
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: var(--habibi-white);
+
+    color: var(--habibi-brown);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.habibi-search-form input:focus {
+
+    border-color: var(--habibi-red);
+
+    box-shadow:
+        0 0 0 3px rgba(158, 38, 54, 0.08);
+
+}
+
+
+.habibi-search-form button {
+
+    position: absolute;
+
+    left: 5px;
+
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: var(--habibi-red);
+
+    color: var(--habibi-white);
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.habibi-menu-button {
+
+    display: none;
+
+    width: 42px;
+
+    height: 42px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--habibi-brown);
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.habibi-menu-button:hover {
+
+    background: var(--habibi-red);
+
+    color: var(--habibi-white);
+
+}
+
+
+/* =========================================================
+   MOBILE OVERLAY
+========================================================= */
+
+.habibi-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(35, 20, 20, 0.45);
+
+    z-index: 1998;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+    backdrop-filter: blur(2px);
+
+}
+
+
+.habibi-overlay.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* =========================================================
+   MOBILE SIDE MENU
+========================================================= */
+
+.habibi-side-menu {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: min(320px, 86vw);
+
+    height: 100vh;
+
+    padding: 20px;
+
+    background: var(--habibi-white);
+
+    z-index: 1999;
+
+    box-shadow:
+        -10px 0 35px rgba(0, 0, 0, 0.12);
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform 0.3s ease;
+
+    overflow-y: auto;
+
+}
+
+
+.habibi-side-menu.show {
+
+    transform:
+        translateX(0);
+
+}
+
+
+/* =========================================================
+   SIDE MENU HEADER
+========================================================= */
+
+.habibi-side-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 10px;
+
+    border-bottom:
+        1px solid rgba(158, 38, 54, 0.10);
+
+}
+
+
+.habibi-side-header strong {
+
+    color: var(--habibi-red);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+.habibi-side-close {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--habibi-cream);
+
+    color: var(--habibi-brown);
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.habibi-side-close:hover {
+
+    background: var(--habibi-red);
+
+    color: var(--habibi-white);
+
+}
+
+
+/* =========================================================
+   SIDE LINKS
+========================================================= */
+
+.habibi-side-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.habibi-side-links a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-height: 48px;
+
+    padding: 8px 12px;
+
+    border-radius: 11px;
+
+    color: var(--habibi-brown);
+
+    font-family: "Vazirmatn", sans-serif;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.habibi-side-links a i {
+
+    width: 22px;
+
+    text-align: center;
+
+    color: var(--habibi-red);
+
+    font-size: 18px;
+
+}
+
+
+.habibi-side-links a:hover {
+
+    background: var(--habibi-cream);
+
+    color: var(--habibi-red);
+
+}
+
+
+.mobile-admin-link {
+
+    margin-top: 5px;
+
+    background:
+        rgba(214, 168, 79, 0.12);
+
+}
+
+
+.mobile-admin-link i {
+
+    color: var(--habibi-gold) !important;
+
+}
+
+
+.side-menu-divider {
+
+    height: 1px;
+
+    margin: 12px 5px;
+
+    background:
+        rgba(74, 44, 42, 0.08);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */@media (max-width: 991.98px) {
+
+
+    .habibi-header-inner {
+
+        min-height: 72px;
+
+        gap: 10px;
+
+    }
+
+
+    .habibi-menu-button {
+
+        display: inline-flex;
+
+    }
+
+
+    .habibi-nav {
+
+        display: none;
+
+    }
+
+
+    .habibi-logo {
+
+        flex: 1;
+
+    }
+
+
+    .habibi-logo img {
+
+        max-width: 130px;
+
+        max-height: 55px;
+
+    }
+
+
+    .habibi-actions {
+
+        gap: 2px;
+
+    }
+
+
+    .habibi-user-button .user-name,
+    .habibi-user-button .user-chevron {
+
+        display: none;
+
+    }
+
+
+    .habibi-user-button {
+
+        padding: 0;
+
+        width: 42px;
+
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+
+    .habibi-header-inner {
+
+        min-height: 65px;
+
+    }
+
+
+    .habibi-logo img {
+
+        max-width: 112px;
+
+        max-height: 48px;
+
+    }
+
+
+    .habibi-action,
+    .habibi-menu-button {
+
+        width: 39px;
+
+        height: 39px;
+
+    }
+
+
+    .habibi-action {
+
+        font-size: 18px;
+
+    }
+
+
+    .habibi-menu-button {
+
+        font-size: 21px;
+
+    }
+
+
+    .habibi-actions {
+
+        gap: 0;
+
+    }
+
+
+    .habibi-search {
+
+        padding:
+            10px 0 13px;
+
+    }
+
+
+    .habibi-search-form input {
+
+        height: 43px;
+
+        font-size: 12px;
+
+    }
+
+
+}

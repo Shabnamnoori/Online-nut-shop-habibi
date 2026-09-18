@@ -1,0 +1,224 @@
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.habibi-contact-hero {
+    padding: 90px 0 70px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #fff8f6 0%,
+        #fdf1ed 100%
+    );
+}
+
+.habibi-contact-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.habibi-contact-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #8b2635;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.habibi-contact-hero h1 {
+    margin: 0 0 18px;
+    font-size: 42px;
+    font-weight: 800;
+    color: #35151c;
+}
+
+.habibi-contact-hero p {
+    margin: 0;
+    color: #777;
+    line-height: 2;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.habibi-contact-section {
+    padding: 70px 0 90px;
+}
+
+
+/* =========================================
+   CONTACT CARD
+========================================= */
+
+.habibi-contact-card {
+    height: 100%;
+    padding: 40px 25px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.habibi-contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.habibi-contact-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f8e9e6;
+    color: #8b2635;
+
+    font-size: 28px;
+}
+
+.habibi-contact-card h2 {
+    margin-bottom: 12px;
+    font-size: 21px;
+    font-weight: 800;
+    color: #35151c;
+}
+
+.habibi-contact-card p {
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.habibi-contact-card a {
+    color: #8b2635;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.habibi-contact-card a:hover {
+    color: #5e1824;
+}
+
+.habibi-contact-card strong {
+    color: #8b2635;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   BOTTOM MESSAGE
+========================================= */
+
+.habibi-contact-bottom {
+    margin-top: 45px;
+    padding: 25px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-radius: 20px;
+    background: #35151c;
+    color: #fff;
+}
+
+.habibi-contact-bottom > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.habibi-contact-bottom i {
+    color: #e9a6a9;
+}
+
+.habibi-contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    background: #fff;
+    color: #35151c;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.habibi-contact-button:hover {
+    background: #f8e9e6;
+    color: #8b2635;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .habibi-contact-hero {
+        padding: 65px 0 50px;
+    }
+
+    .habibi-contact-hero h1 {
+        font-size: 32px;
+    }
+
+    .habibi-contact-section {
+        padding: 50px 0 65px;
+    }
+
+    .habibi-contact-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .habibi-contact-bottom > div {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .habibi-contact-hero h1 {
+        font-size: 28px;
+    }
+
+    .habibi-contact-hero p {
+        font-size: 14px;
+    }
+
+    .habibi-contact-card {
+        padding: 32px 20px;
+    }
+
+    .habibi-contact-bottom {
+        padding: 22px 18px;
+    }
+
+}
